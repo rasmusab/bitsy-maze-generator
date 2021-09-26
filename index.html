@@ -177,7 +177,7 @@
       let bitsy_game_data = 
         `${game_title}
 
-        # BITSY VERSION 7.6
+        # BITSY VERSION 7.10
 
         ! ROOM_FORMAT 1
 
@@ -336,9 +336,9 @@
         tiled_maze[row_chunk_i] = []
         for (let col_chunk_i = 0; col_chunk_i < maze[0].length / room_size; col_chunk_i++) {
           let row_start = row_chunk_i * room_size - 1
-          let row_end = (row_chunk_i + 1) * room_size  + 1
+          let row_end = (row_chunk_i + 1) * room_size
           let col_start = col_chunk_i * room_size - 1
-          let col_end = (col_chunk_i + 1) * room_size + 1
+          let col_end = (col_chunk_i + 1) * room_size 
           tiled_maze[row_chunk_i][col_chunk_i] = slice_maze(maze, row_start, row_end, col_start, col_end)
         }
       }
